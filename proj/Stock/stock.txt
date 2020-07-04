@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>The Stock Market</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <!--Link for glyphocon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  </head>
+  <script>
+     $(function () {
+     $('[data-toggle="tooltip"]').tooltip()
+      })
+
+  </script>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"> <!--Actual graph for the glyphocon-->  <i class="fa fa-line-chart" style="font-size:23px"></i> &nbsp;The Stock Market  </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#what">What is the stock market?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#whyc">Why Companies join the stock market</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#whyp">Why people invest the stock market</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#how">How it works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#fun">Fun Facts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#more">Further Learning</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="text-white">
+      <div class="container text-center">
+        <br><br><br><br><br><br>
+        <h1>The Stock Market</h1>
+        <p class="lead">What makes the global economy move</p>
+      </div>
+      <br><br><br><br><br><br><br>
+
+    </header>
+
+    <section id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+           <center><h2>Home</h2></center>
+
+            <p class="lead">The stock market can be a great source of confusion for many people.  The average person generally falls into one of two categories. The first believe investing is a form of gambling; they are certain that if you invest, you will more than likely end up losing your money.The second category consists of those who know they should invest for the long-run, but don’t know where to begin.  Many feel like investing is some sort of black-magic that only a few people know how to use.These feelings are not grounded in facts. Someone who believes along these lines of thinking simply don’t understand what the stock market is or why it exists. In this website I hope to prove that the stock market isn’t another form of gambling or some sort of black-magic but instead a learnable consept that truly helps run the world economy as we know it.</p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="what" class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <center><h2>What is the stock market?</h2></center>
+            <p class="lead">The stock market is an everyday term we use to talk about a place where stocks and bonds are "traded" – meaning bought and sold. For many people, that is the first thing that comes to mind for investing. The goal is to buy the stock, hold it for a time, and then sell the stock for more than you paid for it.
+</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="whyc">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <center><h2>Why Companies join the stock market</h2></center>
+            <p class="lead">From a company's perspective the stock market is an opportunity to raise <a href="" data-toggle="tooltip" data-placement="top" title="Another word for money" >capital</a>. If a company needs to fund a major project it can sell its shares in the stock market to raise capital instead of borrowing it from banks.So just as the federal government sells bonds to raise money, businesses raise money by selling stock.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+     <section id="whyp" class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <center><h2>Why people invest in the stock market</h2></center>
+            <p class="lead">From an investors perspective the stock market offers an opportunity to participate in a company’s growth and when prudently analyzed and bought at a price on par with or below a shares intrinsic value, has the potential to increase their net worth.
+</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+  <section id="how">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+           <center> <h2>How it works</h2></center>
+            <p class="lead">When you buy stock, you become a shareholder, which means you now own a "part" of the company. If the company's profits go up, you "share" in those profits. If the company's profits fall, so does the price of your stock. If you sold your stock on a day when the price of that stock falls below the price you paid for it, you would lose money.In the stock market, prices rise and fall every day. When you invest in the stock market, you are hoping that over the years, the stock will become much more valuable than the price you paid for it. The general rule is “Buy low and sell high”
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section id="fun" class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <center><h2>Fun Facts</h2></center>
+            <ul>
+                <li>If you calculate the value of all stocks, in all companies, in all countries, globally then technically you get the market cap of Planet Earth. Total market cap has  hit $80 trillion and is heading steadily toward $100 trillion worldwide
+                </li>
+
+                <li>The American Stock Exchange was originally called, "The Curb". This is because traders first started out on the streets of New York City, standing by the curb. Now billions of trades are made simultaneously electronically everyday
+                </li>
+
+                <li>Walt Disney gave his housekeeper Disney stocks every year for the holidays. She died a multi-millionaire
+               </li>
+
+               <li>Since 1903, the start of every day's trading session on the NYSE starts with the ringing of an actual bell at 9:30 a.m. Eastern Standard Time. Originally, the signal was a gavel, and then a gong. Many high-profile people have been invited to participate in the tradition of ringing the opening bell, including singer Usher, former President Ronald Reagan, actor Robert Downey, Jr., firefighters and Star Wars villain Darth Vader.
+               </li>
+
+              </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <section id="more">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+           <center> <h2>Further Learning</h2></center>
+           <p>Heres some resourses to learn more about the stock market and our financial system as a whole</p>
+            <ul>
+              <li><a href="https://www.investopedia.com/terms/s/stockmarket.asp" target="_blank">Investopia</a></li>
+              <li><a href="https://www.thebalance.com/what-is-an-ipo-process-pros-and-cons-3305857" target="_blank">The Balance</a></li>
+              <li><a href="https://www.nasdaq.com/article/what-is-your-investment-strategy-cm847039" target="_blank">NASADAQ</a></li>
+              <li><a href="https://corporatefinanceinstitute.com/resources/careers/map/" target="_blank">corporatefinanceinstitute</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white"> &copy; 2018 The Stock Market | All Rights Reserved</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="js/scrolling-nav.js"></script>
+
+  </body>
+
+</html>

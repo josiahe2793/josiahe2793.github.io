@@ -1,0 +1,144 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <title>Pong</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.13/p5.js"></script>
+    <script>
+        var ballX;
+        var ballY;
+        var ballSpeedX = 5;
+        var ballSpeedY = 5;
+        var paddleHeight = 30;
+        var points = 0;
+        //Title
+        var started = false
+
+
+        function setup() {
+            createCanvas(800, 600);
+            // noCursor();
+            ballX = width / 2;
+            ballY = height / 2;
+
+
+
+
+        }
+
+        function draw() {
+            //Title page
+            if (!started) {
+                background(0, 50);
+                fill(255, 0, 0);
+                textSize(80);
+                text("PONG", 300, height / 2);
+                textSize(15)
+                text("by Josiah E", 380, 320);
+
+            }
+            background(0, 50);
+            //When enter key is pressed,start game and  make title page go away
+            if (keyCode === ENTER) {
+
+                started = true
+                    //All functions being  called
+                fill(255);
+                moveBall();
+                checkCollide();
+                drawPaddle();
+                drawBall();
+                pointsLog();
+                levelInc();
+
+
+            }
+        }
+
+        function moveBall() {
+            ballX = ballX + ballSpeedX;
+            ballY = ballY + ballSpeedY;
+
+            console.log("ballSpeedX: " + ballSpeedX +
+                ", ballSpeedY: " + ballSpeedY);
+        }
+
+        function checkCollide() {
+            if (ballX < 0 || ballX > width) {
+
+                ballSpeedX = ballSpeedX * -1;
+
+            }
+            if (ballY < 0 || ballY > height) {
+
+                ballSpeedY = ballSpeedY * -1;
+
+            }
+
+
+            if (ballY > height - paddleHeight) { // ball is past goal line vertically
+                if (ballX > mouseX && ballX < mouseX + 200) { // ball is within paddle horizontally
+                    //Hits paddle,speed increases
+                    ballSpeedY = ballSpeedY + 2
+                    ballSpeedX = ballSpeedX + 2
+                    ballSpeedY = ballSpeedY * -1;
+                    //Increase the points by 1 everytime, ball hits paddle
+                    points += 1
+
+
+                }
+                else {
+                    fill(255, 0, 0);
+                    textSize(50);
+                    text("GAME OVER!", width / 3, height / 2);
+                    noLoop();
+
+                }
+            }
+        }
+
+        function drawBall() {
+            noStroke();
+            ellipse(ballX, ballY, 20, 20);
+        }
+
+        function drawPaddle() {
+            strokeWeight(4);
+            rect(mouseX, height - paddleHeight - 4, 200, paddleHeight);
+        }
+
+        //Player's points
+        function pointsLog() {
+            fill(255);
+            textSize(20);
+            text("Points: " + points, 10, 30)
+        }
+
+        //Difficulty increase as points increase
+        function levelInc() {
+            if (points >= 1) {
+                ballSpeedX + 2
+                ballSpeedY + 2
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form><input TYPE="button" onClick="history.go(0)" value="Play Again?"></form>
+  <div id="code" class="container-fluid">
+        <script src="https://gist-it.appspot.com/github/josiahe2793/p5js/blob/gh-pages/pong-mix.html?footer=0"></script>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(window).bind("load", function() {
+            $('#code').before($('#defaultCanvas').remove());
+        });
+    </script>
+
+
+</body>
+
+</html>
