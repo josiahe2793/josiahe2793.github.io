@@ -9,12 +9,13 @@
 }
 
 
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
 /* Carousel base class */
 .carousel {
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 
 /* Add some shading to the image behind the landing image */
@@ -27,7 +28,7 @@
 
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  bottom: 3rem;
+  bottom: 4.35rem;
   z-index: 10;
 }
 
